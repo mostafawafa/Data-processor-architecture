@@ -23,6 +23,7 @@ class ProductController extends Controller
     public function save()
     {
 
+        if(!isset($this->requestParams['saver']) || !isset($this->requestParams['provider']))return;
         $saverType = $this->requestParams['saver'];
         $saver = SaverFactory::create($saverType);
 
