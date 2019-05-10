@@ -1,6 +1,6 @@
 <?php
 
-require_once('vendor/autoload.php');
+require_once(__DIR__ . '/vendor/autoload.php');
 
 $routes = [];
 
@@ -45,7 +45,7 @@ function dispatch(string $action)
 $action = explode('/',$_SERVER['REQUEST_URI'])[2];
 
 
-require_once('routes.php');
+require_once(__DIR__ .'/routes.php');
 
 
 dispatch($action);
