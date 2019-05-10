@@ -84,3 +84,4 @@ I also would make an interface and classes for the template engines so it can be
 -Create new Database and dump sql.dump file on it.
 -copy .env.example to .env and change Db credentials.
 -run "composer install". you need to install composer first if it's not already installed.
+-change permission for storage folder if you wanna file saver to work
